@@ -1,0 +1,74 @@
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.bg-dark{
+  background-color: #27374D !important;
+}
+
+.content-right img{
+	cursor: crosshair; 
+	
+  border-radius: 18px;
+}
+
+.content-right:hover{
+	transform: translateY(2%);
+}
+.card-cover:hover{
+ transform: translateY(2%);
+}
+.card-link{
+	text-decoration: none;
+	color: white;
+}
+.card-link:hover{
+	text-decoration: none;
+	color: #DDE6ED;
+}
+
+.card-img{
+  height: 180px;
+}
+
+.card-img img {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* coroulse */
+@media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@media (min-width: 768px) {
+
+		.carousel-inner .carousel-item-end.active,
+		.carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		.carousel-inner .carousel-item-start.active, 
+		.carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	.carousel-inner .carousel-item-end,
+	.carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
